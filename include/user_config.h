@@ -8,8 +8,13 @@
 #ifndef INCLUDE_USER_CONFIG_H_
 #define INCLUDE_USER_CONFIG_H_
 
+#define MQTT_BUF_SIZE		1024
+#define MQTT_RECONNECT_TIMEOUT 	5	/*second*/
 
-//#define  COLOR_LCD
+#define PROTOCOL_NAMEv31	/*MQTT version 3.1 compatible with Mosquitto v0.15*/
+
+
+//#define  INFO
 
 
 

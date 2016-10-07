@@ -118,11 +118,11 @@ endif
 TARGET = app
 
 # which modules (subdirectories) of the project to include in compiling
-MODULES	= driver user
+MODULES	= driver user mqtt modules
 EXTRA_INCDIR = include $(SDK_BASE)/../extra/include
 
 # libraries used in this project, mainly provided by the SDK
-LIBS = c gcc hal phy pp net80211 lwip wpa main crypto
+LIBS = c gcc hal phy pp net80211 lwip wpa main ssl crypto
 
 # compiler flags using during compilation of source files
 CFLAGS = -Os -g -O2 -std=gnu90 -Wpointer-arith -Wundef -Werror -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -mno-serialize-volatile -D__ets__ -DICACHE_FLASH

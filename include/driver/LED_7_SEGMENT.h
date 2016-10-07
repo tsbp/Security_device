@@ -30,7 +30,13 @@
 #define DIG__	(0)
 #define DIG_F	(SEG_A | SEG_E | SEG_F | SEG_G)
 #define DIG_n	(SEG_C | SEG_E | SEG_G)
+#define DIG_A	(SEG_A | SEG_B | SEG_C| SEG_E | SEG_F | SEG_G)
+#define DIG_L	(SEG_D | SEG_E | SEG_F)
+#define DIG_r	(SEG_E | SEG_G)
+#define DIG_S	(SEG_A | SEG_C | SEG_D | SEG_F | SEG_G)
+#define DIG_t	(SEG_D | SEG_E | SEG_F | SEG_G)
+#define DIG_b	(SEG_C | SEG_D | SEG_E | SEG_F | SEG_G)
 //==============================================================================
-extern void display(uint8 *aDisp);
+extern void display(uint8 *aDisp, uint8 aBlink);
 //==============================================================================
 #endif /* INCLUDE_DRIVER_LED_7_SEGMENT_H_ */
